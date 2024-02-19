@@ -1,6 +1,6 @@
 # Tiny Tapeout project information
-project: wokwi_id:0
-  title:        "Multiplier"      # Project title
+project: wokwi_id:   0
+  title:        "multiplier"      # Project title
   author:       "Skanda"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "Testin multiplier design on tinytape"      # One line description of what your project does
