@@ -1,5 +1,5 @@
 # Tiny Tapeout project information
-project: wokwi_id = 0 
+project:
   title:        "Multiplier"      # Project title
   author:       "Skanda"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
