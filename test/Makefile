@@ -12,7 +12,7 @@ ifneq ($(GATES),yes)
 # RTL simulation:
 SIM_BUILD				= sim_build/rtl
 
-VERILOG_SOURCES += $(PWD)/tb.v $(PWD)/project.v $(PWD)/multiply.v
+#VERILOG_SOURCES += $(PWD)/tb.v $(PWD)/project.v $(PWD)/multiply.v
 COMPILE_ARGS 		+= -I$(SRC_DIR)
 
 else
@@ -30,12 +30,12 @@ VERILOG_SOURCES += $(PDK_ROOT)/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_f
 # this gets copied in by the GDS action workflow
 VERILOG_SOURCES += $(PWD)/gate_level_netlist.v
 
-VERILOG_SOURCES += $(PWD)/tb.v $(PWD)/project.v $(PWD)/multiply.v
+#VERILOG_SOURCES += $(PWD)/tb.v $(PWD)/project.v $(PWD)/multiply.v
 
 endif
 
 # Include the testbench sources:
-#VERILOG_SOURCES += $(PWD)/tb.v $(PWD)/project.v $(PWD)/multiply.v
+VERILOG_SOURCES += $(PWD)/tb.v $(PWD)/project.v $(PWD)/multiply.v
 TOPLEVEL = tb
 
 # MODULE is the basename of the Python test file
